@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+  body
+    -const nombre = "aron fabricio"
+    -const  bulena = true
+    -const register = false
+    -const frutas = ["manzana","pera","durazno"]
+    h1 hola  atodos desde pug para todos
+    p= `este es mi nombre ${nombre}`
+    div#img
+    a(href="#") soy un enlacex
+    div.bulean
+      if bulena
+        p es verdadero
+      else
+        p es falso
+    div(class= register ? "registrado":"sinRegistrar")
+    each fruta in frutas
+      p= `${fruta.charAt(0).toUpperCase()}${fruta.substring(1)}`
+    header.header
+        block header
+    main.main
+        block main
+    div#app

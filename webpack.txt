@@ -1,0 +1,1 @@
+npm i -D webpack webpack-cli babel-loader @babel/core @babel/preset-env @babel/plugin-transform-runtime html-webpack-plugin html-loader url-loader file-loader css-minimizer-webpack-plugin terser-webpack-plugin pug pug-loader  mini-css-extract-plugin css-loader sass sass-loader stylus stylus-loader image-webpack-loader dotenv-webpack
